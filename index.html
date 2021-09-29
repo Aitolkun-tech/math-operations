@@ -13,12 +13,12 @@
         let sum = n*(n+1)/2;
         document.write(`The sum of natual numbers is: ${sum}`);  */
 
-        let ss=prompt('suvenir');
+      /*let ss=prompt('suvenir');
         let s=Number(ss);
         let bb=prompt('bezdelushki');
         const vesSuv=10;
         const vesBez=30;
-        document.write(`The total weight of your purchase is: ${s*vesSuv+bb*vesBez}gr`);
+        document.write(`The total weight of your purchase is: ${s*vesSuv+bb*vesBez}gr`); */
         
        /*  let percent = 4;
         let d = prompt('your depo');
@@ -30,7 +30,16 @@
     
         document.write(`Ваша прибыль за 1 год ${sum} сом, <br> Общая прибыль ${total.toFixed(2)} сом` ); */
 
-    
+        let ord = prompt('your order?');
+        let order = Number(ord);
+        let tip = order*0.18;
+        let tax = order*0.5;
+        let total=order+tip+tax;
+        document.write(`Total sum: ${total.toFixed(2)} <br>`);
+        document.write(`Tip: ${tip.toFixed(2)} <br>`);
+        document.write(`Tax: ${tax.toFixed(2)}`);
+
+
 
         
     </script>
